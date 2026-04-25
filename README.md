@@ -14,10 +14,7 @@
 *An independent Linux distribution built from scratch, with its own package manager, its own philosophy, and zero compromises.*
  
 <br/>
-![Status](https://img.shields.io/badge/status-in%20development-534AB7?style=flat-square)
-![Phase](https://img.shields.io/badge/phase-0%20%E2%80%94%20foundation-1D9E75?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-AFA9EC?style=flat-square)
-![Built with](https://img.shields.io/badge/built%20with-LFS-26215C?style=flat-square)
+![Status](https://img.shields.io/badge/status-in%20development-534AB7?style=flat-square) ![Phase](https://img.shields.io/badge/phase-0%20%E2%80%94%20foundation-1D9E75?style=flat-square) ![License](https://img.shields.io/badge/license-MIT-AFA9EC?style=flat-square) ![Built with](https://img.shields.io/badge/built%20with-LFS-26215C?style=flat-square)
 
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=white) ![Nix](https://img.shields.io/badge/Nix-5277C3?logo=nixos&logoColor=white) ![Hyprland](https://img.shields.io/badge/Hyprland-00A4CC?logo=linux&logoColor=white)
  
