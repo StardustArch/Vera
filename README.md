@@ -12,7 +12,7 @@
 
 <img src="https://img.shields.io/badge/status-in%20development-534AB7?style=flat-square" alt="Status"/>
 <img src="https://img.shields.io/badge/phase-0%20%E2%80%94%20foundation-1D9E75?style=flat-square" alt="Phase"/>
-<img src="https://img.shields.io/badge/license-MIT-AFA9EC?style=flat-square" alt="License"/>
+<img src="https://img.shields.io/badge/license-GPL%20v3-AFA9EC?style=flat-square" alt="License"/>
 <img src="https://img.shields.io/badge/built%20with-LFS-26215C?style=flat-square" alt="Built with LFS"/>
 
 </div>
