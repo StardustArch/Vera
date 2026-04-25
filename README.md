@@ -130,7 +130,9 @@ If you are building something similar and want to exchange notes, open a Discuss
 
 ## License
 
-MIT — do whatever you want with this. Attribution appreciated, not required.
+GPL v3 — if you use this, your modifications must stay open. Freedom is contagious.
+ 
+See [LICENSE](./LICENSE) for the full terms.
 
 ---
 
