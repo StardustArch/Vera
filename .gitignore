@@ -1,0 +1,18 @@
+# Build environment local
+/sources/
+/patches/
+/lfs.img
+/lfs/
+/tools/
+/logs/
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System
+.DS_Store
+Thumbs.db
