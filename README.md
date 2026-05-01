@@ -63,10 +63,10 @@ This organisation is split into focused repositories. Each one has a single resp
 ## Roadmap
 
 ### Phase 0 — Foundation *(now)*
-- [ ] Define init system (evaluating OpenRC vs custom)
-- [ ] Study and document LFS chapter by chapter
-- [ ] Set up cross-compilation toolchain
-- [ ] Write first automated build script
+- [x] Define init system (evaluating OpenRC vs custom)
+- [x] Study and document LFS chapter by chapter
+- [x] Set up cross-compilation toolchain
+- [x] Write first automated build script
 
 ### Phase 1 — Bootable base system
 - [ ] Compile LFS system base from scratch
