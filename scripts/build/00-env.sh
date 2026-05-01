@@ -29,8 +29,6 @@ set +h
 # Mascara padrão: ficheiros criados com permissões seguras (rwxr-xr-x / rw-r--r--)
 umask 022
 
-# Target triplet para toolchain
-export LFS_TGT="$(uname -m)-lfs-linux-gnu"
 
 # Locale neutro: evita bugs de i18n/gconv durante compilação de glibc/gcc
 export LC_ALL=POSIX
@@ -44,13 +42,20 @@ export PATH="$LFS/tools/bin:/usr/bin"
 [[ ! -L /usr/bin ]] && export PATH="/bin:$PATH"
 
 # Shell explícita para scripts de build
-export CONFIG_SHELL="$LFS/tools/bin/bash"
+export CONFIG_SHELL=/bin/bash
 
 # Paralelismo explícito (usa todos os cores físicos disponíveis)
 export MAKEFLAGS="-j$(nproc)"
 
 # Exporta tudo para sub-processos
-export LFS LFS_TGT LC_ALL LANG PATH CONFIG_SHELL MAKEFLAGS
+export LFS  LC_ALL LANG PATH CONFIG_SHELL MAKEFLAGS
+
+export LFS=/mnt/lfs
+export LFS_TGT="x86_64-linux-musl"
+export MAKEFLAGS="-j$(nproc)"
+export LC_ALL=POSIX
+export CONFIG_SHELL=/bin/bash
+export PATH="/tools/bin:/usr/bin:$PATH"
 
 # ──────────────────────────────────────────────────────────────
 # VALIDAÇÃO FINAL & FEEDBACK

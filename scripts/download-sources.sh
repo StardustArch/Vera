@@ -51,6 +51,7 @@ https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-5.2.32.tar.gz
 https://sourceware.org/pub/binutils/releases/binutils-2.43.1.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.xz
+https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.5.tar.xz
 https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz
@@ -65,7 +66,7 @@ https://ftp.gnu.org/gnu/gawk/gawk-5.3.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz
 https://ftp.gnu.org/gnu/gettext/gettext-0.22.5.tar.xz
-https://ftp.gnu.org/gnu/glibc/glibc-2.40.tar.xz
+https://musl.libc.org/releases/musl-1.2.5.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
 https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz
 https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz
@@ -122,7 +123,6 @@ EOList
 # Descomenta quando chegares à Fase 3 do roadmap.
 # ──────────────────────────────────────────────────────────────
 # read -r -d '' TIER3_PKGS << 'EOList' || true
-# https://github.com/gavinhoward/bc/releases/download/6.7.6/bc-6.7.6.tar.xz
 # https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz
 # https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 # https://pypi.org/packages/source/f/flit-core/flit_core-3.9.0.tar.gz
@@ -144,9 +144,9 @@ EOList
 read -r -d '' PATCHES << 'EOList' || true
 https://www.linuxfromscratch.org/patches/lfs/12.2/bzip2-1.0.8-install_docs-1.patch
 https://www.linuxfromscratch.org/patches/lfs/12.2/coreutils-9.5-i18n-2.patch
-https://www.linuxfromscratch.org/patches/lfs/12.2/glibc-2.40-fhs-1.patch
 https://www.linuxfromscratch.org/patches/lfs/12.2/kbd-2.6.4-backspace-1.patch
 https://www.linuxfromscratch.org/patches/lfs/12.2/sysvinit-3.10-consolidated-1.patch
+
 EOList
 
 # ──────────────────────────────────────────────────────────────

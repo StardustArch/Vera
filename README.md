@@ -11,7 +11,7 @@
 <br/>
 
 <img src="https://img.shields.io/badge/status-in%20development-534AB7?style=flat-square" alt="Status"/>
-<img src="https://img.shields.io/badge/phase-0%20%E2%80%94%20foundation-1D9E75?style=flat-square" alt="Phase"/>
+<img src="https://img.shields.io/badge/phase-1%20%E2%80%94%20bootable%20base-1D9E75?style=flat-square" alt="Phase"/>
 <img src="https://img.shields.io/badge/license-GPL%20v3-AFA9EC?style=flat-square" alt="License"/>
 <img src="https://img.shields.io/badge/built%20with-LFS-26215C?style=flat-square" alt="Built with LFS"/>
 
@@ -51,8 +51,8 @@ This organisation is split into focused repositories. Each one has a single resp
 | Repo | Description | Status |
 |------|-------------|--------|
 | [`vera`](.) | This file. Philosophy, roadmap, contributing guide. | active |
-| [`vera-core`](../vera-core) | LFS build scripts, patches, base system configuration. | 🔨 building |
-| [`vera-pkg`](../vera-pkg) | The Vëra package manager — resolver, CLI, binary cache. | 📋 planned |
+| [`vera-core`](../vera-core) | LFS build scripts, patches, base system configuration. | ✅ bootable base |
+| [`vpm`](../vpm) | The Vëra package manager — resolver, CLI, binary cache. | 📋 planned |
 | [`vera-ports`](../vera-ports) | Package recipes, one directory per package. | 📋 planned |
 | [`vera-vex`](../vera-vex) | Vex — the native terminal assistant. Ships with Vëra, installable elsewhere. | 📋 planned |
 | [`vera-dots`](../vera-dots) | Default dotfiles, theme, wallpapers, desktop environment configs. | 📋 planned |
@@ -62,20 +62,21 @@ This organisation is split into focused repositories. Each one has a single resp
 
 ## Roadmap
 
-### Phase 0 — Foundation *(now)*
-- [ ] Define init system (evaluating OpenRC vs custom)
-- [ ] Study and document LFS chapter by chapter
-- [ ] Set up cross-compilation toolchain
-- [ ] Write first automated build script
+### Phase 0 — Foundation *(completed)*
+- [x] Define init system (chosen: sysvinit)
+- [x] Study and document LFS chapter by chapter
+- [x] Set up cross-compilation toolchain (musl + gcc + binutils)
+- [x] Write first automated build script
 
-### Phase 1 — Bootable base system
-- [ ] Compile LFS system base from scratch
-- [ ] First successful boot on real hardware
-- [ ] Minimal working shell environment
-- [ ] Document every build decision
+### Phase 1 — Bootable base system *(current)*
+- [x] Compile LFS system base from scratch
+- [x] First successful boot on hardware (QEMU validation)
+- [x] Minimal working shell environment
+- [ ] Finalize sysvinit configuration (runlevels, agetty, rc scripts)
+- [x] Document every build decision
 
 ### Phase 2 — Package management
-- [ ] Design `vera-pkg` architecture and CLI
+- [ ] Design `vpm` architecture and CLI
 - [ ] Implement dependency resolver
 - [ ] Create `vera-ports` format and first 20 packages
 - [ ] Self-hosting: Vëra can rebuild itself
@@ -94,11 +95,10 @@ This organisation is split into focused repositories. Each one has a single resp
 
 ## Current state
 
-Vëra is in **Phase 0**. The system does not boot yet. There is no package manager. There is no ISO.
+Vëra has completed **Phase 0** and is finalizing **Phase 1**. The system boots successfully, reaches a login prompt, and runs a minimal shell environment. Only `sysvinit` runlevel and service configuration remains before Milestone 1 is fully sealed.
 
-What exists: a clear philosophy, a defined architecture, and a person who is going to build this over the next two years regardless.
-
-Follow the journey through the commit history. Every build script added is a real step forward.
+There is no package manager. There is no ISO. There is no desktop.  
+What exists: a bootable base, a documented and reproducible toolchain, and a clear path forward.
 
 ---
 
