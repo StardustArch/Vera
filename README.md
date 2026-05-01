@@ -66,7 +66,6 @@ This organisation is split into focused repositories. Each one has a single resp
 - [x] Define init system (chosen: sysvinit)
 - [x] Study and document LFS chapter by chapter
 - [x] Set up cross-compilation toolchain (musl + gcc + binutils)
-- [x] Write first automated build script
 
 ### Phase 1 — Bootable base system *(current)*
 - [x] Compile LFS system base from scratch
